@@ -1,0 +1,94 @@
+;; cs-vok.mim -- Czech input method based on Vogo's vok keyboard
+;; Copyright (C) 2020  Kateřina Churanová <katerina@churanova.eu>
+
+;; The m17n library is free software; you can redistribute it and/or
+;; modify it under the terms of the GNU Lesser General Public License
+;; as published by the Free Software Foundation; either version 2.1 of
+;; the License, or (at your option) any later version.
+
+;; The m17n library is distributed in the hope that it will be useful,
+;; but WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+;; Lesser General Public License for more details.
+
+;; You should have received a copy of the GNU Lesser General Public
+;; License along with the m17n library; if not, write to the Free
+;; Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+;; Boston, MA 02110-1301, USA.
+
+(input-method cs vok)
+
+(description
+ "Czech input method based on Vogo's vok keyboard.
+ (https://gitlab.com/vojta_vogo/vok/-/blob/master/xorg/vok)
+")
+
+(title "VOK-m17n")
+
+(map
+ (vok
+  ((G-2) ?ě)
+  ((G-3) ?š)
+  ((G-4) ?č)
+  ((G-5) ?ř)
+  ((G-6) ?ž)
+  ((G-7) ?ý)
+  ((G-8) ?á)
+  ((G-9) ?í)
+  ((G-0) ?é)
+  ((G--) ?=)
+  ((G-0) ?é)
+  ((G-@) ?Ě)
+  ((G-#) ?Š)
+  ((G-$) ?Č)
+  ((G-%) ?Ř)
+  ((G-^) ?Ž)
+  ((G-&) ?Ý)
+  ((G-*) ?Á)
+  ((G-\() ?Í)
+  ((G-\)) ?É)
+  ((G--) ?–)
+  ((G-_) ?−)
+  ((G-w) ?€)
+  ((G-e) ?é)
+  ((G-E) ?ě)
+  ((G-r) ?ř)
+  ((G-t) ?ť)
+  ((G-y) ?ý)
+  ((G-U) ?ů)
+  ((G-u) ?ú)
+  ((G-i) ?í)
+  ((G-o) ?ó)
+  ((G-[) ?ú)
+  ((G-{) ?Ú)
+  ((G-a) ?á)
+  ((G-s) ?š)
+  ((G-d) ?ď)
+  ((G-;) ?ů)
+  ((G-:) ?Ů)
+  ((G-') ?„)
+  ((G-\") ?“)
+  ((G-z) ?ž)
+  ((G-c) ?č)
+  ((G-n) ?ň)
+  ((G-.) ?…)
+  ((G-= a) ?á)
+  ((G-= e) ?é)
+  ((G-= i) ?í)
+  ((G-= o) ?ó)
+  ((G-= u) ?ú)
+  ((G-+ e) ?ě)
+  ((G-+ r) ?ř)
+  ((G-+ d) ?ď)
+  ((G-+ t) ?ť)
+  ((G-+ n) ?ň)
+))
+
+(state
+ (init
+  (vok)))
+
+;; Local Variables:
+;; coding: utf-8
+;; mode: lisp
+;; End:
